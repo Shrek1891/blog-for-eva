@@ -1,0 +1,1 @@
+const connect = 'mongodb+srv://mainUser:tu7#Vzac@cluster0.1eb62ty.mongodb.net/Blog?retryWrites=true&w=majority'
