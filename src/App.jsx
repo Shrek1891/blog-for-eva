@@ -22,7 +22,7 @@ import {CSSTransition} from "react-transition-group";
 import Chat from "./components/Chat";
 import LoadingDotsIcon from "./components/LoadingDotsIcon";
 
-axios.defaults.baseURL = 'http://localhost:8080';
+axios.defaults.baseURL = 'https://back-blog.vercel.app/';
 
 function App() {
     const nodeRef = useRef(null);
