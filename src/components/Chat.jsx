@@ -6,7 +6,10 @@ import io from "socket.io-client";
 import {Link} from "react-router-dom";
 import avatars from "../utils/avatars";
 
-const socket = io("https://back-blog.vercel.app");
+
+const socket = io("https://back-blog.vercel.app", {
+    withCredentials: true
+});
 
 const Chat = () => {
     const chatLog = useRef(null);
