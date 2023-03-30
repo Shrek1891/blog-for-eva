@@ -7,7 +7,9 @@ import {Link} from "react-router-dom";
 import avatars from "../utils/avatars";
 
 
-const socket = io("https://back-blog.vercel.app")
+const socket = io("https://back-blog.vercel.app", {
+    transports:["websocket", "polling"]
+})
 
 const Chat = () => {
     const chatLog = useRef(null);
